@@ -5,14 +5,13 @@ var volHistory = [];
 var yoff1 = 0.0;
 
 function setup() {
-
 	noCursor();
 
-	mic = new p5.AudioIn();
+	mic = new p5.AudioIn("fever.mp3");
 	mic.start();
 
 	createCanvas(windowWidth, windowHeight);
-	for (var i = 0; i < 300; i++) {
+	for (var i = 0; i < 1500; i++) {
 		stars[i] = new Star();
 	}
 }
